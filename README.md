@@ -43,16 +43,3 @@ Oba urządzenia:
 
 ## Instrukcja kompilacji i uruchomienia
 
-### Wymagania
-- **PlatformIO** lub **Arduino IDE** (dla ESP32-C3)  
-- **SDK dla Raspberry Pi Pico** (np. [pico-sdk](https://github.com/raspberrypi/pico-sdk))  
-- Konto w [Adafruit IO](https://io.adafruit.com/)  
-- Dostęp do sieci WiFi  
-
-### Kroki kompilacji
-#### Raspberry Pi Pico 2 W
-1. Zainstaluj `pico-sdk` oraz `cmake`.  
-2. Sklonuj repozytorium projektu:  
-   ```bash
-   git clone https://github.com/<twoje-repo>/iot-home-system.git
-   cd iot-home-system/pico
