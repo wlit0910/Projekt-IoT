@@ -4,14 +4,15 @@
 Celem projetu jest stworzenie systemu IoT umożliwiającego **zdalne zarządzanie urządzeniami domowymi**.  
 System opiera się na aplikacji komputerowej lub mobilnej, która komunikuje się z mikrokontrolerami zarówno w **sieci lokalnej (WiFi)**, jak i przez **internet za pomocą platformy [Adafruit IO](https://io.adafruit.com/)**.
 
-### Wykorzystane mikrokontrolery
-- **Raspberry Pi Pico 2 W**
+## Wykorzystane mikrokontrolery
+
+### **Raspberry Pi Pico 2 W**
 
 ![Pico 2W 1](images/rpi1.jpg) 
   - Czujnik temperatury  
   - Wyświetlacz do prezentacji danych  
 
-- **Seeed Xiao ESP32-C3**  
+### **Seeed Xiao ESP32-C3**  
 
 ![ESP32 1](images/esp1.jpg) 
   - Umieszczony w listwie elektrycznej  
@@ -43,3 +44,8 @@ Oba urządzenia:
 
 ## Instrukcja kompilacji i uruchomienia
 
+
+## 📚 Dodatkowe informacje
+
+Chcesz zobaczyć kulisy powstawania projektu?  
+Zajrzyj do [MAKINGOF.md](MAKINGOF.md).
