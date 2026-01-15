@@ -30,7 +30,7 @@ Wymagane było uzyskanie odpowiednich komponentów:
 - Czujnik temperatury LM35DZ NS – analogowy THT  
 - Raspberry Pi Pico 2 WH – RP2350 ARM Cortex M33 + CYW43439 – WiFi/Bluetooth – ze złączami  
 
-![Komponenty](images/komponenty.png)
+![Komponenty](images/komponenty.jpg)
 
 To trzeba było dokupić, poza tym mieliśmy już płytki stykowe, przewody, zasilacze itp.
 
@@ -47,7 +47,7 @@ Pico rzeczywiście się łączył, można było sprawdzić jego adres IP. Na PC 
 
 Pomimo prostoty aplikacji możliwe było już zdalne sterowanie urządzeniem.  
 
-![Aplikacja konsolowa](images/aplikacja_konsolowa.png)
+![Aplikacja konsolowa](images/aplikacja_konsolowa.jpg)
 
 ---
 
@@ -71,12 +71,14 @@ Przekaźnik jest przystosowany do pracy z napięciem do 250V AC, więc można go
 Mieliśmy starą niedziałającą listwę antyprzepięciową. Okazało się, że problemem był zepsuty włącznik. Wymieniliśmy go i listwa zaczęła działać.  
 Wyciągnęliśmy moduł antyprzepięciowy i w jego miejsce włożyliśmy przekaźnik.  
 
-![Listwa prototyp](images/listwa.png)
+![Listwa prototyp1](images/listwa1.jpg)
+![Listwa prototyp2](images/listwa2.jpg)
+
 
 Prototyp działał – można było sterować listwą przez sieć lokalną.  
 Dodaliśmy czujnik temperatury i ustawienie automatycznego załączania listwy po przekroczeniu progu.  
 
-![Automatyczne sterowanie](images/auto.png)
+![Automatyczne sterowanie](images/listwa.gif)
 
 Problemem był jednak długi kabel wychodzący z listwy i ryzyko związane z prowadzeniem przewodu niskiego napięcia obok 230V. Dodatkowo przekaźnik był zawodny – utknął w stanie załączenia.
 
@@ -90,7 +92,7 @@ Dokupiliśmy:
 - mały zasilacz 5V  
 - przekaźnik z optoizolacją  
 
-![Nowa listwa](images/listwa_nowa.png)
+![Nowa listwa](images/listwa3.jpg)
 
 Taka kombinacja pozwoliła umieścić wszystko wewnątrz listwy.  
 ESP32 wymagało wylutowania części pinów, aby zmieścić się w obudowie.  
