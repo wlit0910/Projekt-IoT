@@ -39,7 +39,10 @@ bool loadWiFiCredentials()
     if (wifiSSID == "" || wifiPassword == "")
     {
         Serial.println("No stored WiFi credentials.");
-        return false;
+        Serial.println("Using fallback.");
+        wifiSSID = "Black Messa";
+        wifiPassword = "kappa008";
+        return true;
     }
     return true;
 }
@@ -127,8 +130,8 @@ void setup()
     // Load Adafruit IO credentials
     if (!loadAioCredentials())
     {
-        aioUser = "your_username"; // fallback defaults
-        aioKey  = "your_aio_key";
+        aioUser = ""; // fallback defaults
+        aioKey  = "";
     }
 
     // Initialize Adafruit IO if WiFi is connected

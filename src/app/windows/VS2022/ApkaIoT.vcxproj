@@ -92,20 +92,21 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\external\SDL2\include;..\external\SDL2_ttf\include;..\..\external\BinkaEngine\include;..\external;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\external\SDL2\include;..\external\SDL2_ttf\include;..\..\external\BinkaEngine\include;..\external\eclipse-paho-mqtt-c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <SupportJustMyCode>true</SupportJustMyCode>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\external\SDL2\lib\x86;..\external\SDL2_ttf\lib\x86;..\..\external\BinkaEngine\lib\windows\x86\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2main.lib;SDL2.lib;SDL2_ttf.lib;opengl32.lib;BinkaUI.lib;BinkaEngine.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\external\SDL2\lib\x86;..\external\SDL2_ttf\lib\x86;..\..\external\BinkaEngine\lib\windows\x86\debug;..\external\eclipse-paho-mqtt-c\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2main.lib;SDL2.lib;SDL2_ttf.lib;opengl32.lib;BinkaUI.lib;BinkaEngine.lib;paho-mqtt3c.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>copy "$(SolutionDir)\..\external\SDL2\lib\x86\*.dll" "$(TargetDir)"
 copy "$(SolutionDir)\..\external\SDL2_ttf\lib\x86\*.dll" "$(TargetDir)"
-copy "$(SolutionDir)\..\..\external\BinkaEngine\lib\windows\x86\debug\*.dll" "$(TargetDir)"</Command>
+copy "$(SolutionDir)\..\..\external\BinkaEngine\lib\windows\x86\debug\*.dll" "$(TargetDir)"
+copy "$(SolutionDir)\..\external\eclipse-paho-mqtt-c\lib\*.dll" "$(TargetDir)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -116,7 +117,7 @@ copy "$(SolutionDir)\..\..\external\BinkaEngine\lib\windows\x86\debug\*.dll" "$(
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\external\SDL2\include;..\external\SDL2_ttf\include;..\..\external\BinkaEngine\include;..\external;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\external\SDL2\include;..\external\SDL2_ttf\include;..\..\external\BinkaEngine\include;..\external\eclipse-paho-mqtt-c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -124,13 +125,14 @@ copy "$(SolutionDir)\..\..\external\BinkaEngine\lib\windows\x86\debug\*.dll" "$(
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\external\SDL2\lib\x86;..\external\SDL2_ttf\lib\x86;..\..\external\BinkaEngine\lib\windows\x86\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2main.lib;SDL2.lib;SDL2_ttf.lib;opengl32.lib;BinkaUI.lib;BinkaEngine.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\external\SDL2\lib\x86;..\external\SDL2_ttf\lib\x86;..\..\external\BinkaEngine\lib\windows\x86\release;..\external\eclipse-paho-mqtt-c\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2main.lib;SDL2.lib;SDL2_ttf.lib;opengl32.lib;BinkaUI.lib;BinkaEngine.lib;paho-mqtt3c.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>copy "$(SolutionDir)\..\external\SDL2\lib\x86\*.dll" "$(TargetDir)"
 copy "$(SolutionDir)\..\external\SDL2_ttf\lib\x86\*.dll" "$(TargetDir)"
-copy "$(SolutionDir)\..\..\external\BinkaEngine\lib\windows\x86\release\*.dll" "$(TargetDir)"</Command>
+copy "$(SolutionDir)\..\..\external\BinkaEngine\lib\windows\x86\release\*.dll" "$(TargetDir)"
+copy "$(SolutionDir)\..\external\eclipse-paho-mqtt-c\lib\*.dll" "$(TargetDir)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -139,19 +141,20 @@ copy "$(SolutionDir)\..\..\external\BinkaEngine\lib\windows\x86\release\*.dll" "
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\external\SDL2\include;..\external\SDL2_ttf\include;..\..\external\BinkaEngine\include;..\external;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\external\SDL2\include;..\external\SDL2_ttf\include;..\..\external\BinkaEngine\include;..\external\eclipse-paho-mqtt-c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\external\SDL2\lib\x64;..\external\SDL2_ttf\lib\x64;..\..\external\BinkaEngine\lib\windows\x64\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2main.lib;SDL2.lib;SDL2_ttf.lib;opengl32.lib;BinkaUI.lib;BinkaEngine.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\external\SDL2\lib\x64;..\external\SDL2_ttf\lib\x64;..\..\external\BinkaEngine\lib\windows\x64\debug;..\external\eclipse-paho-mqtt-c\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2main.lib;SDL2.lib;SDL2_ttf.lib;opengl32.lib;BinkaUI.lib;BinkaEngine.lib;paho-mqtt3c.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>copy "$(SolutionDir)\..\external\SDL2\lib\x64\*.dll" "$(TargetDir)"
 copy "$(SolutionDir)\..\external\SDL2_ttf\lib\x64\*.dll" "$(TargetDir)"
-copy "$(SolutionDir)\..\..\external\BinkaEngine\lib\windows\x64\debug\*.dll" "$(TargetDir)"</Command>
+copy "$(SolutionDir)\..\..\external\BinkaEngine\lib\windows\x64\debug\*.dll" "$(TargetDir)"
+copy "$(SolutionDir)\..\external\eclipse-paho-mqtt-c\lib\x64\*.dll" "$(TargetDir)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -162,7 +165,7 @@ copy "$(SolutionDir)\..\..\external\BinkaEngine\lib\windows\x64\debug\*.dll" "$(
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\external\SDL2\include;..\external\SDL2_ttf\include;..\..\external\BinkaEngine\include;..\external;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\external\SDL2\include;..\external\SDL2_ttf\include;..\..\external\BinkaEngine\include;..\external\eclipse-paho-mqtt-c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -170,13 +173,14 @@ copy "$(SolutionDir)\..\..\external\BinkaEngine\lib\windows\x64\debug\*.dll" "$(
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\external\SDL2\lib\x64;..\external\SDL2_ttf\lib\x64;..\..\external\BinkaEngine\lib\windows\x64\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2main.lib;SDL2.lib;SDL2_ttf.lib;opengl32.lib;BinkaUI.lib;BinkaEngine.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\external\SDL2\lib\x64;..\external\SDL2_ttf\lib\x64;..\..\external\BinkaEngine\lib\windows\x64\release;..\external\eclipse-paho-mqtt-c\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2main.lib;SDL2.lib;SDL2_ttf.lib;opengl32.lib;BinkaUI.lib;BinkaEngine.lib;paho-mqtt3c.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>copy "$(SolutionDir)\..\external\SDL2\lib\x64\*.dll" "$(TargetDir)"
 copy "$(SolutionDir)\..\external\SDL2_ttf\lib\x64\*.dll" "$(TargetDir)"
-copy "$(SolutionDir)\..\..\external\BinkaEngine\lib\windows\x64\release\*.dll" "$(TargetDir)"</Command>
+copy "$(SolutionDir)\..\..\external\BinkaEngine\lib\windows\x64\release\*.dll" "$(TargetDir)"
+copy "$(SolutionDir)\..\external\eclipse-paho-mqtt-c\lib\x64\*.dll" "$(TargetDir)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

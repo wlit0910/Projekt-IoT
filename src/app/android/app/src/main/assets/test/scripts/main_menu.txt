@@ -7,9 +7,9 @@ Label
 {
 	name "label_title"
 	position "173 20"
-	background_color "27 84 229 255"
+	background_color "27 200 229 255"
 	font_size "40"
-	text "Main menu"
+	text "Apka IoT"
 }
 
 
@@ -17,9 +17,10 @@ Button
 {
 	name "mm_newproject"
 	position "97 180"
-	size "120 60"
-	text "Create project"
+	size "150 60"
+	text "Adafruit IO settings"
 	panel_command ""
+	global_command "create_aio_settings_form"
 }
 
 Button
@@ -27,8 +28,9 @@ Button
 	name "mm_openproject"
 	position "283 180"
 	size "120 60"
-	text "Load project"
+	text "Connect"
 	panel_command ""
+	global_command "connect_aio"
 }
 
 Button
@@ -65,4 +67,19 @@ Button
 	text ""
 	global_command "open_optionsmenu"
 }
-
+Label
+{
+	name "lb_aio_status"
+	position "200 260"
+	background_color "255 255 255 0"
+	font_size "16"
+	text "AIO Status: Not connected"
+}
+Button
+{
+	name "btn_aio_disconnect"
+	position "370 255"
+	size "100 32"
+	text "Disconnect"
+	global_command "disconnect_aio"
+}

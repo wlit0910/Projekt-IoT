@@ -11,12 +11,13 @@ SRC_PATH := $(LOCAL_PATH)/../../../../src
 
 LOCAL_C_INCLUDES := $(SDL_PATH)/include \
                     $(SDL_TTF_PATH) \
-                    $(BINKAENGINE_PATH)/include
+                    $(BINKAENGINE_PATH)/include \
+                    $(LOCAL_PATH)/../../../../external/paho.mqtt.c/src
 
 # Add your application source files here...
 LOCAL_SRC_FILES := $(SRC_PATH)/main.cpp
 
-LOCAL_STATIC_LIBRARIES := binkaui
+LOCAL_STATIC_LIBRARIES := binkaui paho-mqtt3c
 LOCAL_SHARED_LIBRARIES := SDL2 SDL2_ttf binkaengine
 
 LOCAL_LDLIBS := -lGLESv1_CM -lGLESv2 -lOpenSLES -llog -landroid -lstdc++
