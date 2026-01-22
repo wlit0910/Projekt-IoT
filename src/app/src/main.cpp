@@ -557,12 +557,14 @@ int ClientInit()
 	Button* btnAIOSettings = new Button("btnAIOSettings");
 	btnAIOSettings->SetParent(layerGameui);
 	btnAIOSettings->SetPos(10, 50);
+	btnAIOSettings->SetSize(120, 30);
 	btnAIOSettings->SetText("AIO Settings");
 	btnAIOSettings->globalCommand = "create_aio_settings_form";
 
 	Button* btnAIOFeed = new Button("btnAIOFeed");
 	btnAIOFeed->SetParent(layerGameui);
 	btnAIOFeed->SetPos(10, 90);
+	btnAIOFeed->SetSize(120, 30);
 	btnAIOFeed->SetText("AIO Feed");
 	btnAIOFeed->globalCommand = "create_aio_feed_form";
 
@@ -570,13 +572,15 @@ int ClientInit()
 	Button* btnAddDevice = new Button("btnAddDevice");
 	btnAddDevice->SetParent(layerGameui);
 	btnAddDevice->SetPos(10, 10);
+	btnAddDevice->SetSize(120, 30);
 	btnAddDevice->SetText("Add Device");
 	btnAddDevice->globalCommand = "create_device_form";
 
 	Button* btnAIOSubscribeFeed = new Button("btnAIOSubscribeFeed");
 	btnAIOSubscribeFeed->SetParent(layerGameui);
 	btnAIOSubscribeFeed->SetPos(10, 130);
-	btnAIOSubscribeFeed->SetText("Subscribe to Feed");
+	btnAIOSubscribeFeed->SetSize(120, 30);
+	btnAIOSubscribeFeed->SetText("Subscribe Feed");
 	btnAIOSubscribeFeed->globalCommand = "create_aio_feed_subscriber_form";
 
 

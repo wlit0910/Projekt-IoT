@@ -59,9 +59,7 @@ Główną zaletą aplikacji była możliwość kompilacji na wiele platform: And
 ![Interfejs SDL2](images/interfejs.png)
 
 Zmieniliśmy menu główne projektu, dodaliśmy więcej przycisków i nowe komendy konsolowe.  
-Przypisaliśmy do przycisku ten sam kod, który był w aplikacji konsolowej i mogliśmy włączyć/wyłączyć przekaźnik za pomocą kliknięcia.  
-
-![Sterowanie przyciskiem](images/przycisk.png)
+Dodaliśmy nowe okienka i pola teskstowe do utworzenia komunikacji z Adafruit IO.
 
 ---
 
@@ -98,18 +96,18 @@ Taka kombinacja pozwoliła umieścić wszystko wewnątrz listwy.
 ESP32 wymagało wylutowania części pinów, aby zmieścić się w obudowie.  
 Podłączyliśmy kontroler do zasilania i przekaźnika, zamontowaliśmy antenę Wi-Fi.  
 
-![ESP32](images/esp32.png)
+![ESP32](images/esp32.jpg)
 
 Przed zamknięciem listwy wgraliśmy najnowszą wersję programu przez Arduino IDE.  
 Dodaliśmy funkcję Access Pointa, aby można było ustawić nowe Wi-Fi.  
 
 Pico otrzymał dodatkowo wyświetlacz OLED, który pokazuje temperaturę i tryb automatycznego załączania.  
 
-![OLED](images/oled.png)
+![OLED](images/oled.jpg)
 
 ---
 
 ## Podsumowanie
 
 Pod względem sprzętu projekt jest kompletny.  
-Teraz głównym wyzwaniem jest napisanie aplikacji klienckiej oraz aktualizacja kodu mikrokontrolerów.
+Aplikacja posiada działający kod i może być dalej rozwijana.
