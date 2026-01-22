@@ -1,0 +1,18 @@
+This
+{
+	name "con_panel"
+}
+
+GrabBar
+{
+	name "grab_bar"
+	text "Console"
+}
+
+Button
+{
+	name "button_close"
+	text "Close"
+	panel_command "close_panel"
+}
+

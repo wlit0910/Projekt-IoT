@@ -1,0 +1,68 @@
+This
+{
+	name "mm_panel"
+}
+
+Label
+{
+	name "label_title"
+	position "173 20"
+	background_color "27 84 229 255"
+	font_size "40"
+	text "Main menu"
+}
+
+
+Button
+{
+	name "mm_newproject"
+	position "97 180"
+	size "120 60"
+	text "Create project"
+	panel_command ""
+}
+
+Button
+{
+	name "mm_openproject"
+	position "283 180"
+	size "120 60"
+	text "Load project"
+	panel_command ""
+}
+
+Button
+{
+	name "mm_showconsole"
+	position "2 2"
+	size "100 25"
+	background_color "27 84 229 255"
+	regular_color "27 84 229 255"
+	pressed_color "14 44 120 255"
+	text "Show console"
+	global_command "show_console"
+}
+
+Button
+{
+	name "mm_exit"
+	position "448 2"
+	size "50 25"
+	background_color "200 10 10 255"
+	regular_color "200 10 10 255"
+	pressed_color "160 0 0 255"
+	text "Exit"
+	global_command "exit"
+}
+
+Button
+{
+	name "mm_options"
+	position "2 266"
+	size "32 32"
+	tex_released "icon_options_r.bmp"
+	tex_pressed "icon_options_p.bmp"
+	text ""
+	global_command "open_optionsmenu"
+}
+

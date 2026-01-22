@@ -1,0 +1,151 @@
+This
+{
+	name "options_panel"
+}
+
+GrabBar
+{
+	name "grab_bar"
+	text "Options"
+}
+
+Button
+{
+	name "button_close"
+	text "Close"
+	panel_command "close_panel"
+}
+
+
+Label
+{
+	name "lb_autoscale"
+	text "Viewport autoscale"
+	position "10 60"
+}
+
+ToggleButton
+{
+	name "tb_autoscale"
+	position "170 62"
+}
+
+Label
+{
+	name "lb_scale"
+	text "Viewport scale"
+	position "10 90"
+}
+
+TextBox
+{
+	name "txb_scale"
+	position "170 87"
+	size "100 28"
+}
+
+Label
+{
+	name "lb_renderbatching"
+	text "Render batching"
+	position "10 120"
+}
+
+ToggleButton
+{
+	name "tb_render_batching"
+	position "170 122"
+}
+
+Label
+{
+	name "lb_renderbatching_note"
+	text "(requires restart)"
+	position "190 120"
+}
+
+Label
+{
+	name "lb_renderclear"
+	text "Render clear"
+	position "10 150"
+}
+
+ToggleButton
+{
+	name "tb_render_clear"
+	position "170 152"
+}
+
+Label
+{
+	name "lb_filtertextures"
+	text "Filter textures"
+	position "10 180"
+}
+
+ToggleButton
+{
+	name "tb_filter_textures"
+	position "170 182"
+}
+
+Label
+{
+	name "lb_filtertextures_note"
+	text "(requires restart)"
+	position "190 180"
+}
+
+Label
+{
+	name "lb_framedelay"
+	text "Frame delay"
+	position "10 210"
+}
+
+TextBox
+{
+	name "tbx_frame_delay"
+	position "170 207"
+	size "100 28"
+}
+
+Label
+{
+	name "lb_renderer"
+	text "Renderer"
+	position "10 240"
+}
+
+Button
+{
+	name "btn_renderer"
+	position "170 237"
+	size "120 28"
+	panel_command "switch_renderer"
+}
+
+Button
+{
+	name "button_ok"
+	position "99 365"
+	text "Ok"
+	panel_command "ok"
+}
+
+Button
+{
+	name "button_apply"
+	position "182 365"
+	text "Apply"
+	panel_command "apply"
+}
+
+Button
+{
+	name "button_cancel"
+	position "265 365"
+	text "Cancel"
+	panel_command "cancel"
+}

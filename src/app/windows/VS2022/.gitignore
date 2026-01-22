@@ -1,0 +1,6 @@
+Build/
+Buildx64/
+test/
+*.user
+*.aps
+.vs/
